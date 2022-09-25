@@ -1,7 +1,29 @@
 <!DOCTYPE HTML>
+<style>
+	table {
+	  font-family: arial, sans-serif;
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+
+	.tab {
+        display: inline-block;
+        margin-left: 40px;
+    }
+
+	td {
+	  border: 1px solid #dddddd;
+	  text-align: left;
+	  padding: 8px;
+	}
+	
+	tr:nth-child(even) {
+	  background-color: #dddddd;
+	}
+</style>
 <html>
 	<head>
-		<title>Python Lesson</title>
+		<title>Lesson1 python</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -9,17 +31,20 @@
 	<body class="is-preload">
 			<section id="header">
 				<header>
-					<h1 id="logo"><a href="#">Lesson2</a></h1>
-					<p>Selection<br />
-					if-elif-else</p>
+					<h1 id="logo"><a href="index.html">Lesson1</a></h1>
+					<p>Data types, Variables<br />
+					and Expression</p>
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="#one" class="active">One</a></li>
-						<li><a href="#two">Two</a></li>
-						<li><a href="#three">Three</a></li>
-						<li><a href="#four">Four</a></li>
-						<li><a href="#five">Five</a></li>
+						<li><a href="#one" class="active">Variable</a></li>
+						<li><a href="#two">Data types</a></li>
+						<li><a href="#three">Numbers</a></li>
+						<li><a href="#four">Boolean</a></li>
+						<li><a href="#five">String</a></li>
+						<li><a href="#six">Operators</a></li>
+						<li><a href="#seven">Input</a></li>
+						<li><a href="#eight">Comments</a></li>
 					</ul>
 				</nav>
 			</section>
@@ -28,51 +53,787 @@
 							<section id="one">
 								<div class="container">
 									<header class="major">
-										<h2>Python Lesson</h2>
-										<p>Just a python lesson<br />
-										The lesson for a starter </p>
+										<h2>Variables</h2>
 									</header>
-									<p>This lesson will help you improve code-writing skills for Python language. This will start from zero knowledge until you can write some easy program. Why Python? ,Python language is incredibly easy to use and learn for new beginners and newcomers. The python language is one of the most accessible programming languages available because it has simplified syntax and not complicated, which gives more emphasis on natural language. Due to its ease of learning and usage, python codes can be easily written and executed much faster than other programming languages.</p>
+									<p> 
+										<div>
+											Variables are:
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Storage location that have a name
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Name-value pairs
+										</div>
+										<div>
+											Valid variable names:
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Fruit and fruit are different variable
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Must start with a letter, can contain numbers
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Underscores allowed in variable names
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Not allowed: + -
+										</div>
+										<div>
+											Reserved word:
+										</div>
+										<div>
+											<span class="tab"></span>
+											- The words that can't be used in value form(All the words in this table)
+										</div>
+										<table>
+											<tr>
+											  <td>and</td>
+											  <td>finally</td>
+											  <td>None</td>
+											</tr>
+											<tr>
+											  <td>as</td>
+											  <td>FALSE</td>
+											  <td>not</td>
+											</tr>
+											<tr>
+											  <td>assert</td>
+											  <td>for</td>
+											  <td>or</td>
+											</tr>
+											<tr>
+											  <td>break</td>
+											  <td>from</td>
+											  <td>pass</td>
+											</tr>
+											<tr>
+											  <td>class</td>
+											  <td>global</td>
+											  <td>raise</td>
+											</tr>
+											<tr>
+											  <td>continue</td>
+											  <td>if</td>
+											  <td>return</td>
+											</tr>
+											<tr>
+											  <td>def</td>
+											  <td>import</td>
+											  <td>TRUE</td>
+											</tr>
+											<tr>
+												<td>del</td>
+												<td>in</td>
+												<td>try</td>
+											</tr>
+											<tr>
+												<td>elif</td>
+												<td>is</td>
+												<td>with</td>
+											</tr>
+											<tr>
+												<td>else</td>
+												<td>lambda</td>
+												<td>while</td>
+											</tr>
+											<tr>
+												<td>except</td>
+												<td>nonlocal</td>
+												<td>yield</td>
+											</tr>
+										</table>	
+									</p>
 								</div>
 							</section>
 						<section id="two">
 							<div class="container">
 								<header class="major">
-									<h2>Python Lesson</h2>
-									<p>Just a python lesson<br />
-									The lesson for a starter </p>
+									<h2>Data types</h2>
 								</header>
-								<p>This lesson will help you improve code-writing skills for Python language. This will start from zero knowledge until you can write some easy program. Why Python? ,Python language is incredibly easy to use and learn for new beginners and newcomers. The python language is one of the most accessible programming languages available because it has simplified syntax and not complicated, which gives more emphasis on natural language. Due to its ease of learning and usage, python codes can be easily written and executed much faster than other programming languages.</p>
+								<p>
+									<div>
+										1 Basic Data Types:
+									</div>
+									<div>
+										<span class="tab"></span>
+										1.1 Numeric:
+									</div>
+									<div>	
+										<span class="tab"></span>
+										<span class="tab"></span>
+										1.1.1 Integer
+									</div>
+									<div>
+										<span class="tab"></span>
+										<span class="tab"></span>
+										1.1.2 Floating point
+									</div>
+									<div>
+										<span class="tab"></span>
+										1.2 Boolean
+									</div>
+									<div>
+										<span class="tab"></span>
+										1.3 String
+									</div>
+									<div>
+										2 Composite Data Types:
+									</div>
+									<div>
+										<span class="tab"></span>
+										2.1 List
+									</div>
+									<div>
+										<span class="tab"></span>
+										2.2 Tuple
+									</div>
+									<div>
+										<span class="tab"></span>
+										2.2 Dictionary
+									</div>
+									<div>
+										<span class="tab"></span>
+										2.3 Set
+									</div>
+								</p>
 							</div>
 						</section>
 						<section id="three">
 							<div class="container">
 								<header class="major">
-									<h2>Python Lesson</h2>
-									<p>Just a python lesson<br />
-									The lesson for a starter </p>
+									<h2>Numbers</h2>
 								</header>
-								<p>This lesson will help you improve code-writing skills for Python language. This will start from zero knowledge until you can write some easy program. Why Python? ,Python language is incredibly easy to use and learn for new beginners and newcomers. The python language is one of the most accessible programming languages available because it has simplified syntax and not complicated, which gives more emphasis on natural language. Due to its ease of learning and usage, python codes can be easily written and executed much faster than other programming languages.</p>
+								<p>
+									<div>
+										Use numbers directly in your source code. Do not use quotation marks as they are for strings. Integer is a number that cannot contain decimal. But float can.
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											integer = 42
+										</div>
+										<div>
+											<span class="tab"></span>
+											float = 4.2
+										</div>
+										<div>
+											<span class="tab"></span>
+											a = b = c = d = 0.0
+										</div>
+									</div>
+									<div>
+										Integer cannot start with 0... except it is 0. But float can.
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											x = 90
+										</div>
+										<div>
+											<span class="tab"></span>
+											y = 090.00
+										</div>
+									</div>
+								</p>
 							</div>
 						</section>
 						<section id="four">
 							<div class="container">
 								<header class="major">
-									<h2>Python Lesson</h2>
-									<p>Just a python lesson<br />
-									The lesson for a starter </p>
+									<h2>Boolean</h2>
 								</header>
-								<p>This lesson will help you improve code-writing skills for Python language. This will start from zero knowledge until you can write some easy program. Why Python? ,Python language is incredibly easy to use and learn for new beginners and newcomers. The python language is one of the most accessible programming languages available because it has simplified syntax and not complicated, which gives more emphasis on natural language. Due to its ease of learning and usage, python codes can be easily written and executed much faster than other programming languages.</p>
+								<p>
+									<div>
+									A Boolean variable can reference one of two values: True or False.
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											x = True
+										</div>
+										<div>
+											<span class="tab"></span>
+											y = False
+										</div>
+										<div>
+											<span class="tab"></span>
+											z = 5
+										</div>
+										<div>
+											<span class="tab"></span>
+											type(x)
+										</div>
+										<div>
+											<span class="tab"></span>
+											type(y)
+										</div>
+										<div>
+											<span class="tab"></span>
+											type(z)
+										</div>
+									</div>
+									<div>
+										The output will be: 
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											True
+										</div>
+										<div>
+											<span class="tab"></span>
+											False
+										</div>
+										<div>
+											<span class="tab"></span>
+											bool
+										</div>
+									</div>
+								</p>
 							</div>
 						</section>
 						<section id="five">
 							<div class="container">
 								<header class="major">
-									<h2>Python Lesson</h2>
-									<p>Just a python lesson<br />
-									The lesson for a starter </p>
+									<h2>String</h2>
 								</header>
-								<p>This lesson will help you improve code-writing skills for Python language. This will start from zero knowledge until you can write some easy program. Why Python? ,Python language is incredibly easy to use and learn for new beginners and newcomers. The python language is one of the most accessible programming languages available because it has simplified syntax and not complicated, which gives more emphasis on natural language. Due to its ease of learning and usage, python codes can be easily written and executed much faster than other programming languages.</p>
+								<p>
+									<div>
+										Represent text and surrounded by quotes.
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											fruit = 'apple'
+										</div>
+										<div>
+											<span class="tab"></span>
+											fruit = "apple"
+										</div>
+										<div>
+											<span class="tab"></span>
+											s1, s2, s3 = '', 'Knife', 'Hammer Dance'
+										</div>
+									</div>
+									<div>
+										Using quotes within strings
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											sentence = 'She said, "That is a great tasting apple!"'
+										</div>
+										<div>
+											<span class="tab"></span>
+											sentence = "That's a great tasting apple!"
+										</div>
+										<div>
+											<span class="tab"></span>
+											double = "She said, \"That's a great tasting apple!\""
+										</div>
+										<div>
+											<span class="tab"></span>
+											sentence = 'She said, "That\'s a great tasting apple!"'
+										</div>
+									</div>
+								</p>
+							</div>
+						</section>
+						<section id="six">
+							<div class="container">
+								<header class="major">
+									<h2>Operators</h2>
+								</header>
+								<p>
+									<div>
+										Operators are special symbols in Python that carry out arithmetic or logical computation. The value that the operator operates on is called the operand.
+									</div>
+									<div style="margin-top: 50px;margin-left: 250px;margin-bottom: 20px;">
+										Arithmetic Operators
+									</div>
+									<table>
+										<tr>
+										  <td>Operator</td>
+										  <td>Meaning</td>
+										  <td>Example</td>
+										</tr>
+										<tr>
+										  <td>+</td>
+										  <td>Add two operands or unary plus</td>
+										  <td>x+y+2</td>
+										</tr>
+										<tr>
+										  <td>-</td>
+										  <td>Subtract right operand from the left or unary minus</td>
+										  <td>x-y-2</td>
+										</tr>
+										<tr>
+										  <td>*</td>
+										  <td>Multiply two oprands</td>
+										  <td>x*y</td>
+										</tr>
+										<tr>
+										  <td>/</td>
+										  <td>Divide left operand by the right one(always results into float)</td>
+										  <td>x/y</td>
+										</tr>
+										<tr>
+										  <td>%</td>
+										  <td>Modulus-remainder of the division of left operand by the right</td>
+										  <td>x%y (remainder of x/y)</td>
+										</tr>
+										<tr>
+										  <td>//</td>
+										  <td>Floor division-division that results into whole number adjusted to the left in the number line</td>
+										  <td>x//y</td>
+										</tr>
+										<tr>
+											<td>**</td>
+											<td>Exponent-left operand raised to the power of right</td>
+											<td>x**y (x to the power y)</td>
+										</tr>
+									</table>
+									<div>
+										Example:
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											x = 7
+										</div>
+										<div>
+											<span class="tab"></span>
+											y = 2
+										</div>
+										<div>
+											<span class="tab"></span>
+											x + y = 9
+										</div>
+										<div>
+											<span class="tab"></span>
+											x - y = 5
+										</div>
+										<div>
+											<span class="tab"></span>
+											x * y = 14
+										</div>
+										<div>
+											<span class="tab"></span>
+											x / y = 3.5
+										</div>
+										<div>
+											<span class="tab"></span>
+											x % y = 1
+										</div>
+										<div>
+											<span class="tab"></span>
+											x // y = 3
+										</div>
+										<div>
+											<span class="tab"></span>
+											x ** y = 49
+										</div>
+									</div>
+									<div style="margin-top: 50px;margin-left: 250px;margin-bottom: 20px;">
+										Comparison Operators
+									</div>
+									<table>
+										<tr>
+										  <td>Operator</td>
+										  <td>Meaning</td>
+										  <td>Example</td>
+										</tr>
+										<tr>
+										  <td>></td>
+										  <td>Greater that-True if left operand is greater than the right</td>
+										  <td>x>y</td>
+										</tr>
+										<tr>
+										  <td>&lt</td>
+										  <td>Less that-True if left operand is less than the right</td>
+										  <td>x&lty</td>
+										</tr>
+										<tr>
+										  <td>==</td>
+										  <td>Equal to-True if both operands are equal</td>
+										  <td>x==y</td>
+										</tr>
+										<tr>
+										  <td>!=</td>
+										  <td>Not equal to-True if operands are not equal</td>
+										  <td>x!=y</td>
+										</tr>
+										<tr>
+										  <td>>=</td>
+										  <td>Greater than or equal to-True if left operand is greater than or equal to the right</td>
+										  <td>x>=y</td>
+										</tr>
+										<tr>
+										  <td>&lt=</td>
+										  <td>Less than or equal to-True if left operand is less than or equal to the right</td>
+										  <td>x&lt=y</td>
+										</tr>
+									</table>
+									<div>
+										Example:
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											x = 1
+										</div>
+										<div>
+											<span class="tab"></span>
+											y = 2
+										</div>
+										<div>
+											<span class="tab"></span>
+											x > y is False
+										</div>
+										<div>
+											<span class="tab"></span>
+											x &lt y is True
+										</div>
+										<div>
+											<span class="tab"></span>
+											x == y is False
+										</div>
+										<div>
+											<span class="tab"></span>
+											x != y is True
+										</div>
+										<div>
+											<span class="tab"></span>
+											x >= y is False
+										</div>
+										<div>
+											<span class="tab"></span>
+											x &lt= y = True
+										</div>
+									</div>
+									<div style="margin-top: 50px;margin-left: 250px;margin-bottom: 20px;">
+										Logical Operators
+									</div>
+									<table>
+										<tr>
+										  <td>Operator</td>
+										  <td>Meaning</td>
+										  <td>Example</td>
+										</tr>
+										<tr>
+										  <td>AND</td>
+										  <td>True if both the operands are true</td>
+										  <td>x and y</td>
+										</tr>
+										<tr>
+										  <td>OR</td>
+										  <td>True if either of the operands is True</td>
+										  <td>x or y</td>
+										</tr>
+										<tr>
+										  <td>NOT</td>
+										  <td>True if operands is false(complements the operand)</td>
+										  <td>not x</td>
+										</tr>
+									</table>
+									<div style="margin-top: 50px;margin-left: 250px;margin-bottom: 20px;">
+										Bitwise Operators
+									</div>
+									<div>
+										In the table below:Let x = 10 (0000 1010 in binary) and y = 4 (0000 0100 in binary)
+									</div>
+									<table>
+										<tr>
+										  <td>Operator</td>
+										  <td>Meaning</td>
+										  <td>Example</td>
+										</tr>
+										<tr>
+										  <td>&</td>
+										  <td>Bitwise AND</td>
+										  <td>x & y = 0 (0000 0000)</td>
+										</tr>
+										<tr>
+										  <td>|</td>
+										  <td>Bitwise OR</td>
+										  <td>x | y = 14 (0000 1110)</td>
+										</tr>
+										<tr>
+										  <td>~</td>
+										  <td>Bitwise NOT</td>
+										  <td>~x = -11 (1111 0101)</td>
+										</tr>
+										<tr>
+										  <td>^</td>
+										  <td>Bitwise XOR</td>
+										  <td>x ^ y = 14 (0000 1110)</td>
+										</tr>
+										<tr>
+										  <td>>></td>
+										  <td>Bitwise right shift</td>
+										  <td>x >> 2 = 2 (0000 0010)</td>
+										</tr>
+										<tr>
+										  <td>&lt&lt</td>
+										  <td>Bitwise left shift</td>
+										  <td>x &lt&lt 2 = 40 (0010 1000)</td>
+										</tr>
+									</table>
+									<div style="margin-top: 50px;margin-left: 250px;margin-bottom: 20px;">
+										Identity Operators
+									</div>
+									<table>
+										<tr>
+										  <td>Operator</td>
+										  <td>Meaning</td>
+										  <td>Example</td>
+										</tr>
+										<tr>
+										  <td>IS</td>
+										  <td>True if the operands are identical (refer to the same object)</td>
+										  <td>x is True</td>
+										</tr>
+										<tr>
+										  <td>IS NOT</td>
+										  <td>True if the operands are not identical (do not refer to the same object)</td>
+										  <td>x is not True</td>
+										</tr>
+									</table>
+									<div>
+										Example:
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											x1 = 5
+										</div>
+										<div>
+											<span class="tab"></span>
+											y1 = 5
+										</div>
+										<div>
+											<span class="tab"></span>
+											x2 = 'Hello'
+										</div>
+										<div>
+											<span class="tab"></span>
+											y2 = 'Hello'
+										</div>
+										<div>
+											<span class="tab"></span>
+											x3 = [1,2,3]
+										</div>
+										<div>
+											<span class="tab"></span>
+											y3 = [1,2,3]
+										</div>
+										<div>
+											<span class="tab"></span>
+											x1 is not y1 ---> False
+										</div>
+										<div>
+											<span class="tab"></span>
+											x2 is y2 ---> True
+										</div>
+										<div>
+											<span class="tab"></span>
+											x3 is y3 ---> False
+										</div>
+									</div>
+									<div style="margin-top: 50px;margin-left: 250px;margin-bottom: 20px;">
+										Membership Operators
+									</div>
+									<table>
+										<tr>
+										  <td>Operator</td>
+										  <td>Meaning</td>
+										  <td>Example</td>
+										</tr>
+										<tr>
+										  <td>IN</td>
+										  <td>True if value/variable is found in the sequence</td>
+										  <td>5 in x</td>
+										</tr>
+										<tr>
+										  <td>NOT IN</td>
+										  <td>True if value/variable is not found in the sequence</td>
+										  <td>5 not in x</td>
+										</tr>
+									</table>
+									<div>
+										Example:
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											x = 'Hello world'
+										</div>
+										<div>
+											<span class="tab"></span>
+											y = {1 : 'a' , 2 : 'b'}
+										</div>
+										<div>
+											<span class="tab"></span>
+											'H' in x ---> True
+										</div>
+										<div>
+											<span class="tab"></span>
+											'hello' not in x ---> True
+										</div>
+										<div>
+											<span class="tab"></span>
+											1 in y ---> True
+										</div>
+										<div>
+											<span class="tab"></span>
+											'a' in y ---> False
+										</div>
+									</div>
+								</p>
+							</div>
+						</section>
+						<section id="seven">
+							<div class="container">
+								<header class="major">
+									<h2>Input</h2>
+								</header>
+								<p>
+									<div>
+										Python's built-in input function to read input from the keyboard. The input function reads a piece of data that has been entered at the keyboard and returns that data, as a string, back to program. You nomally use the input function in an assignment statement that follows this general format:
+									</div>
+									<div>
+										variable = input(prompt)
+									</div>
+									<div>
+										Example:
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											first_name = input('Enter your first name: ')
+										</div>
+										<div>
+											<span class="tab"></span>
+											last_name = input('Enter your last name: ')
+										</div>
+										<div>
+											<span class="tab"></span>
+											print('Hello', first_name, last_name)
+										</div>
+									</div>
+									<div>
+										The output will be:
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											Enter your first name: Panuwat
+										</div>
+										<div>
+											<span class="tab"></span>
+											Enter your last name: Klinsukhon
+										</div>
+										<div>
+											<span class="tab"></span>
+											Hello Panuwat Klinsukhon
+										</div>
+									</div>
+									<div>
+										Use int,float with input:
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											hours = input('Enter hours: ')
+										</div>
+										<div>
+											<span class="tab"></span>
+											int_hours = int(hours)
+										</div>
+										<div>
+											<span class="tab"></span>
+											float_hours = float(hours)
+										</div>
+									</div>
+									<div>
+										or:
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											int_hours = int(input('Enter hours: '))
+										</div>
+										<div>
+											<span class="tab"></span>
+											float_hours = float(input('Enter hours: '))
+										</div>
+									</div>
+									<div>
+										Multiple value in one input:
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											a, b, c = input("Enter 3 strings: ").split()
+										</div>
+										<div>
+											<span class="tab"></span>
+											print(c, b, a)
+										</div>
+									</div>
+									<div>
+										The output will be:
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											Enter 3 strings: fish eat cat
+										</div>
+										<div>
+											<span class="tab"></span>
+											cat eat fish
+										</div>
+									</div>
+								</p>
+							</div>
+						</section>
+						<section id="eight">
+							<div class="container">
+								<header class="major">
+									<h2>Comments</h2>
+								</header>
+								<p>
+									<div>
+										Comments are notes of explanation that document lines or sections of a program. Comments are part of the program, but the Python interpreter ignores them. They are intended for people who may be reading the source code.
+									</div>
+									<div style="background-color: lightblue;">	
+										<div>
+											#This is single line comments begin with #
+										</div>
+										<div>
+											"""
+										</div>
+										<div>
+											This is multi-line comments
+										</div>
+										<div>
+											are enclosed in
+										</div>
+										<div>
+											triple quotes
+										</div>
+										<div>
+											"""
+										</div>
+								</p>
 							</div>
 						</section>
 					</div>
