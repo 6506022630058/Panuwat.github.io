@@ -44,6 +44,7 @@
 						<li><a href="#five">Sentinel</a></li>
 						<li><a href="#six">Input Validation Loops</a></li>
 						<li><a href="#seven">Nested Loops</a></li>
+						<li><a href="#eight">Continue Break Pass</a></li>
 					</ul>
 				</nav>
 			</section>
@@ -365,7 +366,131 @@
 										Continue: Skip the rest of code inside a loop at the current iteration only.
 									</div>
 									<div>
+										Example:
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											for letter in 'Panuwat Klinsukhon':
+										</div>
+										<div>
+											<span class="tab"></span>
+											<span class="tab"></span>
+											if letter == 'a' or letter == 'k':
+										</div>
+										<div>
+											<span class="tab"></span>
+											<span class="tab"></span>
+											<span class="tab"></span>
+											continue
+										</div>
+										<div>
+											<span class="tab"></span>
+											<span class="tab"></span>
+											print('Current Letter : ',letter)
+										</div>
+									</div>
+									<div>
+										The out put will be:
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											Current Letter :  P
+										</div>
+										<div>
+											<span class="tab"></span>
+											Current Letter :  n
+										</div>
+										<div>
+											<span class="tab"></span>
+											Current Letter :  u
+										</div>
+										<div>
+											<span class="tab"></span>
+											Current Letter :  w
+										</div>
+										<div>
+											<span class="tab"></span>
+											Current Letter :  t
+										</div>
+										<div>
+											<span class="tab"></span>
+											Current Letter :
+										</div>
+										<div>
+											<span class="tab"></span>
+											Current Letter :  K
+										</div>
+										<div>
+											<span class="tab"></span>
+											Current Letter :  l
+										</div>
+										<div>
+											<span class="tab"></span>
+											Current Letter :  i
+										</div>
+										<div>
+											<span class="tab"></span>
+											Current Letter :  n
+										</div>
+										<div>
+											<span class="tab"></span>
+											Current Letter :  s
+										</div>
+										<div>
+											<span class="tab"></span>
+											Current Letter :  u
+										</div>
+										<div>
+											<span class="tab"></span>
+											Current Letter :  h
+										</div>
+										<div>
+											<span class="tab"></span>
+											Current Letter :  o
+										</div>
+										<div>
+											<span class="tab"></span>
+											Current Letter :  n
+										</div>
+									</div>
+									<div>
 										Break: Stop the loop that the break take place inside. 
+									</div>
+									<div>
+										Example:
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											for letter in 'Panuwat Klinsukhon':
+										</div>
+										<div>
+											<span class="tab"></span>
+											<span class="tab"></span>
+											if letter == 'a' or letter == 'k':
+										</div>
+										<div>
+											<span class="tab"></span>
+											<span class="tab"></span>
+											<span class="tab"></span>
+											break
+										</div>
+										<div>
+											<span class="tab"></span>
+											<span class="tab"></span>
+											print('Current Letter : ',letter)
+										</div>
+									</div>
+									<div>
+										The out put will be:
+									</div>
+									<div style="background-color: lightblue;">
+										<div>
+											<span class="tab"></span>
+											Current Letter :  P
+										</div>
 									</div>
 									<div>
 										Pass: Do nothing.
