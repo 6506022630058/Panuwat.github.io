@@ -264,11 +264,233 @@
 						<section id="three">
 							<div class="container">
 								<header class="major">
-									<h2>Python Lesson</h2>
-									<p>Just a python lesson<br />
-									The lesson for a starter </p>
+									<h2>String Methods</h2>
 								</header>
-								<p>This lesson will help you improve code-writing skills for Python language. This will start from zero knowledge until you can write some easy program. Why Python? ,Python language is incredibly easy to use and learn for new beginners and newcomers. The python language is one of the most accessible programming languages available because it has simplified syntax and not complicated, which gives more emphasis on natural language. Due to its ease of learning and usage, python codes can be easily written and executed much faster than other programming languages.</p>
+								<p>
+									<h2>
+										Join
+									</h2>
+									<h4>
+										Example:
+									</h4>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											text = ('I love python')
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											print('/'.join(text))
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											print(''.join(reversed(text)))
+										</div>	
+									</div>
+									<h4>
+										The output will be:
+									</h4>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											I/ /l/o/v/e/ /p/y/t/h/o/n
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											nohtyp evol I
+										</div>	
+									</div>
+									<h2>
+										Split
+									</h2>
+									<h4>
+										Example:
+									</h4>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											text = ('I love python')
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											print(text.split())
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											print(text.split('o'))
+										</div>	
+									</div>
+									<h4>
+										The output will be:
+									</h4>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											['I', 'love', 'python']
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											['I l', 've pyth', 'n']
+										</div>	
+									</div>
+									<h2>
+										Strip
+									</h2>
+									<h4>
+										Example:
+									</h4>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											text = ('#1#I love python###')
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											print(text.strip('#'))
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											print(text.lstrip('#'))
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											print(text.rstrip('#'))
+										</div>	
+									</div>
+									<h4>
+										The output will be:
+									</h4>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											1#I love python
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											1#I love python###
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											#1#I love python
+										</div>	
+									</div>
+									<h2>
+										Find
+									</h2>
+									<h4>
+										Example:
+									</h4>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											text = ('I love python')
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											print(text.find('ve'))
+										</div>	
+									</div>
+									<h4>
+										The output will be:
+									</h4>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											4
+										</div>	
+									</div>
+									<h2>
+										Replace
+									</h2>
+									<h4>
+										Example:
+									</h4>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											text = ('I like python')
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											print(text.replace('like','love'))
+										</div>	
+									</div>
+									<h4>
+										The output will be:
+									</h4>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											I love python
+										</div>	
+									</div>
+									<h2>
+										Endswith
+									</h2>
+									<h4>
+										Example:
+									</h4>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											files = ['test1.py','test2.txt','test3.doc']
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											for file in files:
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											if file.endswith('.txt'):
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											<span class="tab"></span>
+											print(file)
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											if file.endswith('.doc'):
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											<span class="tab"></span>
+											print(file)
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											if file.endswith('.py'):
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											<span class="tab"></span>
+											print(file)
+										</div>	
+									</div>
+									<h4>
+										The output will be:
+									</h4>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											test1.py
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											test2.txt
+										</div>	
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											test3.doc
+										</div>	
+									</div>
+								</p>
 							</div>
 						</section>
 						<section id="four">
