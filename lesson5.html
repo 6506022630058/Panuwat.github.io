@@ -15,16 +15,16 @@
 	<body class="is-preload">
 			<section id="header">
 				<header>
-					<h1 id="logo"><a href="#">Lesson5</a></h1>
+					<h1 id="logo"><a href="index.html">Lesson5</a></h1>
 					<p>Functions<br />
 					</p>
 				</header>
 				<nav id="nav">
 					<ul>
 						<li><a href="#one" class="active">Introduction to Functions</a></li>
-						<li><a href="#two">Two</a></li>
-						<li><a href="#three">Three</a></li>
-						<li><a href="#four">Four</a></li>
+						<li><a href="#two">Passing Arguments</a></li>
+						<li><a href="#three">Global Variables and Global Constants</a></li>
+						<li><a href="#four">Value-Returning</a></li>
 						<li><a href="#five">Five</a></li>
 					</ul>
 				</nav>
@@ -38,39 +38,368 @@
 									</header>
 									<p>
 										<h4>
-											Functions
+											Introduction to Functions
 										</h4>
+										<div>
+											<span class="tab"></span>
+											- A function is a section of reusable code that performs an action.
+										</div>
+										<div>
+											<span class="tab"></span>
+											- A function has a name and is called, or executed, by that name.
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Optionally, functions can accept arguments and return data.
+										</div>
+										<h4>
+											Function naming rules
+										</h4>
+										<div>
+											<span class="tab"></span>
+											- Cannot use key words as a function name
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Cannot contain spaces
+										</div>
+										<div>
+											<span class="tab"></span>
+											- First character must be a letter or underscore
+										</div>
+										<div>
+											<span class="tab"></span>
+											- All other characters must be a letter, number or underscore
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Uppercase and lowercase characters are distinct
+										</div>
+										<h4>
+											Advantages of Function
+										</h4>
+										<div>
+											<span class="tab"></span>
+											- Reducing duplication of code
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Decomposing complex problems into simpler pieces
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Improving clarity of the code
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Reuse of code
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Information hiding
+										</div>
+										<div style="margin-top: 30px;">
+											<h4>
+												Example:
+											</h4>
+										</div>
+										<div style="background-color: #4acaa8;border-radius: 10px;">
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												def message():
+											</div>
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												<span class="tab"></span>
+												print('I Love Python')
+											</div>
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												<span class="tab"></span>
+												print('Python Love Me')
+											</div>
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												message()
+											</div>
+										</div>
+										<div>
+											<h4>
+												The out put will be:
+											</h4>
+										</div>
+										<div style="background-color: #4acaa8;border-radius: 10px;">
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												I Love Python
+											</div>
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												Python Love Me
+											</div>
+										</div>
 									</p>
 								</div>
 							</section>
 						<section id="two">
 							<div class="container">
 								<header class="major">
-									<h2>Python Lesson</h2>
-									<p>Just a python lesson<br />
-									The lesson for a starter </p>
+									<h2>
+										Passing Arguments
+									</h2>
 								</header>
-								<p>This lesson will help you improve code-writing skills for Python language. This will start from zero knowledge until you can write some easy program. Why Python? ,Python language is incredibly easy to use and learn for new beginners and newcomers. The python language is one of the most accessible programming languages available because it has simplified syntax and not complicated, which gives more emphasis on natural language. Due to its ease of learning and usage, python codes can be easily written and executed much faster than other programming languages.</p>
+								<p>
+									<h2 style="margin-top: 50px;color: #4acaa8;">
+										Local variables
+									</h2>
+									<h4>
+										Example:
+									</h4>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											def main():
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											num2()
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											num1()
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											def num1():
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											number = 10
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											print('num1 =',number)
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											def num2():
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											number = 5
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											print('num2 =',number)
+										</div>
+									</div>
+									<div>
+										<h4>
+											The out put will be:
+										</h4>
+									</div>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											num2 = 5
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											num1 = 10
+										</div>
+									</div>
+									<h2 style="margin-top: 50px;color: #4acaa8;">
+										Passing arguments
+									</h2>
+									<h4>
+										Example:
+									</h4>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											def main():
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											num = 10
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											double(num)
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											def double(number):
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											result = number * 2
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											print(result)
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											main()
+										</div>
+									</div>
+									<div>
+										<h4>
+											The out put will be:
+										</h4>
+									</div>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											20
+										</div>
+									</div>
+									<h4>
+										Example:
+									</h4>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											def main():
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											Multiply(3, 5)
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											Multiply(7, 11)
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											def Multiply(num1, num2):
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											result = num1*num2
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											print(result)
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											main()
+										</div>
+									</div>
+									<div>
+										<h4>
+											The out put will be:
+										</h4>
+									</div>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											15
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											77
+										</div>
+									</div>
+								</p>
 							</div>
 						</section>
 						<section id="three">
 							<div class="container">
 								<header class="major">
-									<h2>Python Lesson</h2>
-									<p>Just a python lesson<br />
-									The lesson for a starter </p>
+									<h2>
+										Global Variables and Global Constants
+									</h2>
 								</header>
-								<p>This lesson will help you improve code-writing skills for Python language. This will start from zero knowledge until you can write some easy program. Why Python? ,Python language is incredibly easy to use and learn for new beginners and newcomers. The python language is one of the most accessible programming languages available because it has simplified syntax and not complicated, which gives more emphasis on natural language. Due to its ease of learning and usage, python codes can be easily written and executed much faster than other programming languages.</p>
+								<p>
+									<h4>
+										Example:
+									</h4>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											number = 0
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											def main():
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											global number
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											number = 5
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											def show_number():
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											<span class="tab"></span>
+											print(number)
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											show_number()
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											main()
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											show_number()
+										</div>
+									</div>
+									<div>
+										<h4>
+											The out put will be:
+										</h4>
+									</div>
+									<div style="background-color: #4acaa8;border-radius: 10px;">
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											0
+										</div>
+										<div style="color: #f33636c7;font-weight: bold;">
+											<span class="tab"></span>
+											5
+										</div>
+									</div>
+								</p>
 							</div>
 						</section>
 						<section id="four">
 							<div class="container">
 								<header class="major">
-									<h2>Python Lesson</h2>
-									<p>Just a python lesson<br />
-									The lesson for a starter </p>
+									<h2>
+										Value-Returning
+									</h2>
 								</header>
-								<p>This lesson will help you improve code-writing skills for Python language. This will start from zero knowledge until you can write some easy program. Why Python? ,Python language is incredibly easy to use and learn for new beginners and newcomers. The python language is one of the most accessible programming languages available because it has simplified syntax and not complicated, which gives more emphasis on natural language. Due to its ease of learning and usage, python codes can be easily written and executed much faster than other programming languages.</p>
+								<p>
+
+								</p>
 							</div>
 						</section>
 						<section id="five">
