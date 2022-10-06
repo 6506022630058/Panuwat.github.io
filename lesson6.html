@@ -1,7 +1,13 @@
 <!DOCTYPE HTML>
+<style>
+	.tab {
+        display: inline-block;
+        margin-left: 40px;
+    }
+</style>
 <html>
 	<head>
-		<title>Python Lesson</title>
+		<title>Lesson6 Python</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -9,13 +15,13 @@
 	<body class="is-preload">
 			<section id="header">
 				<header>
-					<h1 id="logo"><a href="#">Lesson6</a></h1>
+					<h1 id="logo"><a href="index.html">Lesson6</a></h1>
 					<p>Files and<br />
 					Exceptions</p>
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="#one" class="active">One</a></li>
+						<li><a href="#one" class="active">Introduction</a></li>
 						<li><a href="#two">Two</a></li>
 						<li><a href="#three">Three</a></li>
 						<li><a href="#four">Four</a></li>
@@ -28,11 +34,80 @@
 							<section id="one">
 								<div class="container">
 									<header class="major">
-										<h2>Python Lesson</h2>
-										<p>Just a python lesson<br />
-										The lesson for a starter </p>
+										<h2>
+											Introduction
+										</h2>
 									</header>
-									<p>This lesson will help you improve code-writing skills for Python language. This will start from zero knowledge until you can write some easy program. Why Python? ,Python language is incredibly easy to use and learn for new beginners and newcomers. The python language is one of the most accessible programming languages available because it has simplified syntax and not complicated, which gives more emphasis on natural language. Due to its ease of learning and usage, python codes can be easily written and executed much faster than other programming languages.</p>
+									<p>
+										<h3>
+											File input/output
+										</h3>
+										<div>
+											For program to retain data between the times it is run, you must save the data
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Data is saved to a file, typically on computer disk
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Saved data can be retrieved and used at a later time
+										</div>
+										<div>
+											"Writing data to" : saving data on a file
+										</div>
+										<div>
+											Output file: a file that data is written to
+										</div>
+										<div>
+											"Reading data from" : process of retrieving data from a file
+										</div>
+										<div>
+											Input file: a file from which data is read
+										</div>
+										<h3>
+											Type of files
+										</h3>
+										<div>
+											In general, two types of files
+										</div>
+										<div>
+											<span class="tab"></span>
+											1. Text file: contains data that has been encoded as text
+										</div>
+										<div>
+											<span class="tab"></span>
+											2. Binary file: contains data that has not been converted to text
+										</div>
+										<diV>
+											Two ways to access data stored in file
+										</diV>
+										<div>
+											<span class="tab"></span>
+											1. Sequential access: file read sequentially from beginning to end, can't skip ahead
+										</div>
+										<div>
+											<span class="tab"></span>
+											2. Direct access: can jump directly to any piece of data in the file
+										</div>
+										<h3>
+											Work with file
+										</h3>
+										<div>
+											There are always three steps that must be taken when a file is used by a program.
+										</div>
+										<div style="margin-left: 40px;">
+											<u><b>Open the file</b></u> - Opening a file creates a connection between the file and the program.
+											Opening an output file usually creates the file on the disk and allows the program to
+											write data to it. Opening an input file allows the program to read data from the file.
+										</div>
+										<div style="margin-left: 40px;">
+											<u><b>Process the file</b></u> - In this step data is either written to the file (if it is an output file) or read from the file (if it is an input file).
+										</div>
+										<div style="margin-left: 40px;">
+											<u><b>Close the file</b></u> - When the program is finished using the file, the file must be closed. Closing a file disconnects the file from the program.
+										</div>
+									</p>
 								</div>
 							</section>
 						<section id="two">
