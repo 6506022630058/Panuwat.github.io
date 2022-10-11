@@ -1,4 +1,10 @@
 <!DOCTYPE HTML>
+<style>
+	.tab {
+        display: inline-block;
+        margin-left: 40px;
+    }
+</style>
 <html>
 	<head>
 		<title>Python Lesson</title>
@@ -15,8 +21,8 @@
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="#one" class="active">One</a></li>
-						<li><a href="#two">Two</a></li>
+						<li><a href="#one" class="active">List</a></li>
+						<li><a href="#two">List Methods</a></li>
 						<li><a href="#three">Three</a></li>
 						<li><a href="#four">Four</a></li>
 						<li><a href="#five">Five</a></li>
@@ -28,21 +34,149 @@
 							<section id="one">
 								<div class="container">
 									<header class="major">
-										<h2>Python Lesson</h2>
-										<p>Just a python lesson<br />
-										The lesson for a starter </p>
+										<h2>
+											List
+										</h2>
 									</header>
-									<p>This lesson will help you improve code-writing skills for Python language. This will start from zero knowledge until you can write some easy program. Why Python? ,Python language is incredibly easy to use and learn for new beginners and newcomers. The python language is one of the most accessible programming languages available because it has simplified syntax and not complicated, which gives more emphasis on natural language. Due to its ease of learning and usage, python codes can be easily written and executed much faster than other programming languages.</p>
+									<p>
+										<div>
+											A list is an object that contains multiple data items. Lists are mutable, which means that their contents can be changed during a program's execution. Lists are dynamic data structures, meaning that items may be added to them or removed from them. You can use indexing, slicing, and various methods to work with lists in a program.
+										</div>
+										<div>
+											List: an object that contains multiple data items
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Element: An item in a list
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Format: list = [item1, item2, etc.]
+										</div>
+										<div>
+											<span class="tab"></span>
+											- Can hold items of different types
+										</div>
+										<div>
+											print function can be used to display an entire list
+										</div>
+										<div>
+											list() function can convert certain types of objects to lists
+										</div>
+										<div style="margin-top: 20px;">
+											<h4>
+												Example:
+											</h4>
+										</div>
+										<div style="background-color: #4acaa8;border-radius: 10px;">
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												mixlist = ['Python', 5, 2.50]
+											</div>
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												numlist = list(range(1,5))
+											</div>
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												multilist = [4,5] * 5
+											</div>
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												pluslist = mixlist + numlist
+											</div>
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												print(mixlist)
+											</div>
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												print(numlist)
+											</div>
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												print(multilist)
+											</div>
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												print(pluslist)
+											</div>
+										</div>
+										<div>
+											<h4>
+												Output:
+											</h4>
+										</div>
+										<div style="background-color: #4acaa8;border-radius: 10px;">
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												['Python', 5, 2.5]
+											</div>
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												[1, 2, 3, 4]
+											</div>
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												[4, 5, 4, 5, 4, 5, 4, 5, 4, 5]
+											</div>
+											<div style="color: #f33636c7;font-weight: bold;">
+												<span class="tab"></span>
+												['Python', 5, 2.5, 1, 2, 3, 4]
+											</div>
+										</div>
+									</p>
 								</div>
 							</section>
 						<section id="two">
 							<div class="container">
 								<header class="major">
-									<h2>Python Lesson</h2>
-									<p>Just a python lesson<br />
-									The lesson for a starter </p>
+									<h2>
+										List Methods
+									</h2>
 								</header>
-								<p>This lesson will help you improve code-writing skills for Python language. This will start from zero knowledge until you can write some easy program. Why Python? ,Python language is incredibly easy to use and learn for new beginners and newcomers. The python language is one of the most accessible programming languages available because it has simplified syntax and not complicated, which gives more emphasis on natural language. Due to its ease of learning and usage, python codes can be easily written and executed much faster than other programming languages.</p>
+								<p>
+									<div>
+										<b>append(item)</b>: used to add items to a list <b>– item</b> is appended to the end of the existing list
+									</div>
+									<div>
+										<b>index(item)</b>: used to determine where an item is located in a list
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Returns the index of the first element in the list containing item
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Raises <b>ValueError</b> exception if <b>item</b> not in the list
+									</div>
+									<div>
+										<b>insert(index,item)</b>: used to insert item at position index in the list
+									</div>
+									<div>
+										<b>sort()</b>: used to sort the elements of the list in ascending order
+									</div>
+									<div>
+										<b>remove(item)</b>: removes the first occurrence of item in the list
+									</div>
+									<div>
+										<b>reverse()</b>: reverses the order of the elements in the list
+									</div>
+									<div>
+										<b>del statement</b>: removes an element from a specific index in a list
+									</div>
+									<div>
+										<span class="tab"></span>
+										General format: <b>del list[i]</b>
+									</div>
+									<div>
+										<b>min</b> and <b>max</b> functions: built-in functions that returns the item that has the lowest or highest value in a sequence
+									</div>
+									<div>
+										<span class="tab"></span>
+										The sequence is passed as an argument
+									</div>
+								</p>
 							</div>
 						</section>
 						<section id="three">
