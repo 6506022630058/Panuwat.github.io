@@ -208,7 +208,255 @@
 									</h2>
 								</header>
 								<p>
-
+									<div>
+										<h4>
+											Introduction
+										</h4>
+									</div>
+									<div>
+										Set: object that stores a collection of data in same way as mathematical set
+									</div>
+									<div>
+										<span class="tab"></span>
+										- All items must be unique
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Set is unordered
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Elements can be of different data types
+									</div>
+									<div>
+										<h4>
+											Set methods
+										</h4>
+									</div>
+									<div>
+										<b>len </b>function: returns the number of elements in the set
+									</div>
+									<div>
+										function: returns the number of elements in the set
+									</div>
+									<div>
+										<b>add </b>method: adds an element to a set
+									</div>
+									<div>
+										<b>update </b>method: adds a group of elements to a set
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Argument must be a sequence containing iterable
+										elements, and each of the elements is added to the set
+									</div>
+									<div>
+										<b>remove </b>and <b>discard </b>methods: remove the specified item from the set
+									</div>
+									<div>
+										<span class="tab"></span>
+										The item that should be removed is passed to both methods as an argument
+									</div>
+									<div>
+										<span class="tab"></span>
+										Behave differently when the specified item is not found in the set
+									</div>
+									<div>
+										<span class="tab"></span>
+										<b>remove </b>method raises a <b>KeyError </b>exception
+									</div>
+									<div>
+										<span class="tab"></span>
+										<b>discard </b>method does not raise an exception
+									</div>
+									<div>
+										<b>clear </b>method: clears all the elements of the set
+									</div>
+									<div>
+										<h4>
+											Finding the union of sets
+										</h4>
+									</div>
+									<div>
+										Union of two sets: a set that contains all the elements of both sets
+									</div>
+									<div>
+										To find the union of two sets:
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Use the <u>union</u> method
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Format: <b>set1.union(set2)</b>
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Use the | operator
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Format: <u>set1 | set2</u>
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Both techniques return a new set which contains the union of both
+										sets
+									</div>
+									<div>
+										<h4>
+											Finding the intersection of sets
+										</h4>
+									</div>
+									<div>
+										Intersection of two sets: a set that contains only the elements found in both sets
+									</div>
+									<div>
+										To find the intersection of two sets:
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Use the <u>intersection</u> method
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Format: <b>set1.intersection(set2)</b>
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Use the & operator
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Format: <u>set1 & set2</u>
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Both techniques return a new set which contains the intersection of
+										both sets
+									</div>
+									<div>
+										<h4>
+											Finding the symmetric difference of sets
+										</h4>
+									</div>
+									<div>
+										Symmetric difference of two sets: a set that contains the elements that are not shared by the two sets
+									</div>
+									<div>
+										To find the symmetric difference of two sets:
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Use the <b>symmetric_difference</b> method
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Format: <b>set1.symmetric_difference(set2)</b>
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Use the ^ operator
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Format: <b>set1 ^ set2</b>
+									</div>
+									<div>
+										<h4>
+											Finding subsets and supersets
+										</h4>
+									</div>
+									<div>
+										Set A is subset of set B if all the elements in set A are included in set B
+									</div>
+									<div>
+										To determine whether set A is subset of set B:
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Use the <b>issubset</b> method
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Format: <b>setA.issubset(setB)</b>
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Use the <b>&lt=</b> operator
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Format: <b>setA &lt= setB</b>
+									</div>
+									<div>
+										Set A is superset of set B if it contains all the elements of set B
+									</div>
+									<div>
+										To determine whether set A is superset of set B:
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Use the <b>issuperset</b> method
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Format: <b>setA.issuperset(setB)</b>
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Use the <b>>=</b> operator
+									</div>
+									<div>
+										<span class="tab"></span>
+										- Format: <b>setA >= setB</b>
+									</div>
+									<div>
+										<h4>
+											Set operation
+										</h4>
+									</div>
+									<div>
+										<table>
+											<thead>
+												<tr style="background-color: #4acaa8">
+													<th style="font-size: 18px;text-align: center;">Format</th>
+													<th style="font-size: 18px;text-align: center;">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr style="background-color: #4acaa88e">
+													<td><b>A | B</b></td>
+													<td><b>Returns a set which is the union of sets A and B.</b></td>
+												</tr>
+												<tr style="background-color: #4acaa8c0">
+													<td><b>A |= B</b></td>
+													<td><b>Adds all elements of array B to the set A.</b></td>
+												</tr>
+												<tr style="background-color: #4acaa88e">
+													<td><b>A & B</b></td>
+													<td><b>Returns all the keys in a dictionary and their associated values as a sequence of tuples.</b></td>
+												</tr>
+												<tr style="background-color: #4acaa8c0">
+													<td><b>keys</b></td>
+													<td><b>Returns all the keys in a dictionary as a sequence of tuples.</b></td>
+												</tr>
+												<tr style="background-color: #4acaa88e">
+													<td><b>pop</b></td>
+													<td><b>Returns the value associated with a specified kry and removes that key-value pair from the dictionary. If the key is not found, the method returns a default value.</b></td>
+												</tr>
+												<tr style="background-color: #4acaa8c0">
+													<td><b>popitem</b></td>
+													<td><b>Returns a randomly selected key-value pair as a tuple from the dictionary and removes that key-value pair from the dictionary</b></td>
+												</tr>
+												<tr style="background-color: #4acaa88e">
+													<td><b>values</b></td>
+													<td><b>Returns all the values in the dictionary as a sequence of tuples.</b></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</p>
 							</div>
 						</section>
