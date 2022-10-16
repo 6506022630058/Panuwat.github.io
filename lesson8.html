@@ -285,7 +285,7 @@
 									</div>
 									<div>
 										<span class="tab"></span>
-										- Use the <u>union</u> method
+										- Use the <b>union</b> method
 									</div>
 									<div>
 										<span class="tab"></span>
@@ -297,7 +297,7 @@
 									</div>
 									<div>
 										<span class="tab"></span>
-										- Format: <u>set1 | set2</u>
+										- Format: <b>set1 | set2</b>
 									</div>
 									<div>
 										<span class="tab"></span>
@@ -317,7 +317,7 @@
 									</div>
 									<div>
 										<span class="tab"></span>
-										- Use the <u>intersection</u> method
+										- Use the <b>intersection</b> method
 									</div>
 									<div>
 										<span class="tab"></span>
@@ -329,7 +329,7 @@
 									</div>
 									<div>
 										<span class="tab"></span>
-										- Format: <u>set1 & set2</u>
+										- Format: <b>set1 & set2</b>
 									</div>
 									<div>
 										<span class="tab"></span>
@@ -436,23 +436,43 @@
 												</tr>
 												<tr style="background-color: #4acaa88e">
 													<td><b>A & B</b></td>
-													<td><b>Returns all the keys in a dictionary and their associated values as a sequence of tuples.</b></td>
+													<td><b>Returns a set which is the intersection of sets A and B.</b></td>
 												</tr>
 												<tr style="background-color: #4acaa8c0">
-													<td><b>keys</b></td>
-													<td><b>Returns all the keys in a dictionary as a sequence of tuples.</b></td>
+													<td><b>A &= B</b></td>
+													<td><b>Leaves in the set A only items that belong to the set B.</b></td>
 												</tr>
 												<tr style="background-color: #4acaa88e">
-													<td><b>pop</b></td>
-													<td><b>Returns the value associated with a specified kry and removes that key-value pair from the dictionary. If the key is not found, the method returns a default value.</b></td>
+													<td><b>A - B</b></td>
+													<td><b>Returns the set difference of A and B (the elements included in A, but not included in B).</b></td>
 												</tr>
 												<tr style="background-color: #4acaa8c0">
-													<td><b>popitem</b></td>
-													<td><b>Returns a randomly selected key-value pair as a tuple from the dictionary and removes that key-value pair from the dictionary</b></td>
+													<td><b>A -= B</b></td>
+													<td><b>Removes all elements of B from the set A.</b></td>
 												</tr>
 												<tr style="background-color: #4acaa88e">
-													<td><b>values</b></td>
-													<td><b>Returns all the values in the dictionary as a sequence of tuples.</b></td>
+													<td><b>A ^ B</b></td>
+													<td><b>Returns the symmetric difference of sets A and B (the elements belonging to either A or B, but not to both sets simultaneously).</b></td>
+												</tr>
+												<tr style="background-color: #4acaa8c0">
+													<td><b>A ^= B</b></td>
+													<td><b>Writes in A the symmetric difference of sets A and B</b></td>
+												</tr>
+												<tr style="background-color: #4acaa88e">
+													<td><b>A &lt= B</b></td>
+													<td><b>Returns true if A is a subset of B.</b></td>
+												</tr>
+												<tr style="background-color: #4acaa8c0">
+													<td><b>A >= B</b></td>
+													<td><b>Returns true if B is a subset of A.</b></td>
+												</tr>
+												<tr style="background-color: #4acaa88e">
+													<td><b>A &lt B</b></td>
+													<td><b>Equivalent to A &lt= B and A != B</b></td>
+												</tr>
+												<tr style="background-color: #4acaa8c0">
+													<td><b>A > B</b></td>
+													<td><b>Equivalent to A >= B and A != B</b></td>
 												</tr>
 											</tbody>
 										</table>
